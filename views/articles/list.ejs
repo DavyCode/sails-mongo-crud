@@ -1,0 +1,31 @@
+<div class="row">
+ <div class="col l12 m12 s12">
+  <table class="striped hoverable highlight">
+    <thead>
+      <tr>
+        <th data-field="id">#</th>
+        <th data-field="title">Title</th>
+        <th data-field="price"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% article.forEach(function(article) { %>
+        <tr>
+          <td><%= article.id%></td>
+          <td><%= article.title%></td>
+          <td>
+              <a href="/article/edit/<%= article.id %>" class="btn-floating btn-small gray waves-effect waves-light">
+                <i class="large material-icons">mode_edit</i>
+              </a>
+            <form action="/article/delete/<%= article.id %>" method="post" style="display: inline-block;">
+              <button type="submit" value="Delete" class="btn-floating btn-small red waves-effect waves-light">
+                <i class="large material-icons">clear</i>
+              </button>
+            </form> 
+          </td>
+        </tr>
+      <%})%>
+    </tbody>
+  </table>
+ </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col s12">
+      <nav>
+        <div class="nav-wrapper black lighten-2">
+          <div class="col s12">
+            <a href="/article/list" class="breadcrumb"> Article</a>
+            <a href="#!" class="breadcrumb"> Edit</a>
+          </div>
+        </div>
+      </nav>
+  
+  
+      <h2 > Edit Article</h2>
+      <div class="col s12">
+        <form  method="POST" action="/article/update/<%= foundArticle.id%>">
+          <div class="input-field col s12">
+            <input type="text" id="title" class="" name="title" value="<%= foundArticle.title%>">
+            <label for="title" data-error="wrong" data-success="right">Title</label>
+          </div>
+          <div class="input-field col s12">
+            <textarea id="body" class="materialize-textarea" name="body" ><%= foundArticle.body%></textarea>
+            <label for="textarea1">Body</label>
+          </div>
+          <button class="btn waves-effect waves-light" type="submit">Submit Changes
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
+      </div>   
+    </div>
+  
+  </div>

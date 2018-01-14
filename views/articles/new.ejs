@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col s12">
+    <nav>
+      <div class="nav-wrapper black lighten-2">
+        <div class="col s12">
+          <a href="/article/list" class="breadcrumb"> Article</a>
+          <a href="#!" class="breadcrumb"> Add</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <h2 > Add Article</h2>
+    <div class="col s12">
+      <form  method="POST" action="/article/create">
+        <div class="input-field col s12">
+          <input type="text" id="title" class="" name="title">
+          <label for="title" data-error="wrong" data-success="right">Title</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="body" class="materialize-textarea" name="body"></textarea>
+          <label for="textarea1">Body</label>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>   
+  </div>
+
+</div>

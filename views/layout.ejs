@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=typeof title == 'undefined' ? 'Sails Article' : title%></title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/styles/materialize.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <!--STYLES END-->
+  </head>
+
+  <body>
+    
+
+    <div class="navbar-fixed">
+      <nav >
+        <div class="nav-wrapper teal lighten-2">
+          <div class="container">
+            <a href="/" class="brand-logo"><i class="material-icons">library_books</i></a>
+            <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="/article/list">Article</a></li>
+                <li><a href="/article/new">Add Article</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/article/list">Article</a></li>
+              <li><a href="/article/new">Add Article</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+<div class="container">
+    <%- body %>
+
+</div>
+
+
+
+    <script>
+      $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+      })
+    </script>
+
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/init.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/materialize.min.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+</html>
