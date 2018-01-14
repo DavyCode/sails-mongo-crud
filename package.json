@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "article",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
@@ -31,8 +31,8 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/blog.git"
+    "url": "git://github.com/davycode/sails-mongo-crud.git"
   },
-  "author": "anonymous node/sails user",
-  "license": ""
+  "author": "Azemoh Paul",
+  "license": "MIT"
 }
